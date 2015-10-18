@@ -10,6 +10,7 @@ class SubmissionsController < ApplicationController
   # GET /submissions/1
   # GET /submissions/1.json
   def show
+    #@submission = Submission.find_by(params:(:id))
   end
 
   # GET /submissions/new
@@ -69,6 +70,6 @@ class SubmissionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def submission_params
-      params[:submission]
+      params.require(:submission).permit(:title)
     end
 end
