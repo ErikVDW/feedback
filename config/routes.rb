@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'idea/title:string'
+
+  get 'idea/body:text'
+
+  get 'idea/submission:belongs_to'
+
   resources :submissions
 
   # The priority is based upon order of creation: first created -> highest priority.
