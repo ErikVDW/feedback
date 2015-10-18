@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :submissions
 
+=======
+>>>>>>> ce871821e379a63a2dfa778d1756252a8bc9133a
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
