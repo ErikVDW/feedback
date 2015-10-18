@@ -10,7 +10,8 @@ class SubmissionsController < ApplicationController
   # GET /submissions/1
   # GET /submissions/1.json
   def show
-    #@submission = Submission.find_by(params:(:id))
+    @idea = Idea.new
+    @idea.submission_id = @submission.id
   end
 
   # GET /submissions/new

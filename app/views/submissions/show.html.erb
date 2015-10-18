@@ -1,4 +1,11 @@
 <p id="notice"><%= notice %></p>
 <h1><%= @submission.title %></h1>
+<br>
+<h3>Ideas</h3>
+<% @submission.ideas.each do |idea| %>
+  <%= idea.title %>
+  <%= idea.body %>
+
+<% end %>
 <%= link_to 'Edit', edit_submission_path(@submission) %> |
 <%= link_to 'Back', submissions_path %>
